@@ -108,10 +108,22 @@ footer{
     
     } */
     nav{
-        width:80%;
+        width:900px;/*80%*/
+        margin: 0 auto;
+    }
+    .dropdown:hover>.dd_content{
+        display: block;
+    }
+    .dd_content{
+        display: none;
+        position:absolute;
+        top: 20px;
+        right:0;
+        width: 150px;
+
     }
     .dropdown{
-
+        position: relative;
     }
     nav>ul>li{
         display: inline;
@@ -131,7 +143,13 @@ footer{
         text-decoration: none;
         padding-left: 20px;
     }
-
+    .dd_content>a{
+        display: block;
+        color:white;
+        font-size: 20px;
+        text-decoration: none;
+        padding-left: 100px;
+    }
     .extra-info a{
         display: block;
         float:left;
@@ -159,4 +177,7 @@ footer{
     h3{
         padding: 0;
         margin:0;
+    }
+    footer>nav>ul>li:last-child>a{
+        color: red;
     }
