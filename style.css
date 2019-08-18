@@ -32,13 +32,15 @@ main{
     border: 1px solid  darkolivegreen;
     width:100%;
 }
-input[type=button] {
-    background-image: url ('images/search_button.png') ;
+input[type="button"] {
+    background: url('images/search_button.png') ;
     background-repeat: no-repeat;    
      
     background-position: center;
-    vertical-align: middle;
-    margin-left: 150px;   
+    /* vertical-align: middle; */
+    margin-left: 150px;  
+    width: 25px;
+    /* height: 100px;  */
     
 }
 header input[type=text] {
@@ -142,7 +144,7 @@ img[src*="3058756287"]{
     background-image: url('images/blue_dots.png');
     background-repeat: no-repeat;
     background-position: inherit;    
-    
+    /* display: none; */
     width: [IMAGE_WIDTH_IN_PIXELS]px;
     height: [IMAGE_HEIGHT_IN_PIXELS]px;  
 }
