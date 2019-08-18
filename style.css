@@ -10,19 +10,35 @@ header{
     background-color: aqua;
     
 }
+body{
+    margin: 0px;
+   font-family: "Arial (Hebrew)", Arial;
+       
+}
+.ads>p,nav li>a,.dropdown a,.contact h2{
+    font-size: 14px;
+    font-family: "Arial (Hebrew)", Arial;
+}
+.extra-info >div,.ads a,.contact_column>div,.input>div,form {
+    font-size: 13px;
 
+}
+main>div ,main> .contact{
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
 
 main{
     border: 1px solid  darkolivegreen;
+    width:100%;
 }
 input[type=button] {
-    background-image: url ('/images/search_button.png') no-repeat;
-    
-    cursor:pointer;
-    background-position: 0px 0px;
+    background-image: url ('images/search_button.png') ;
+    background-repeat: no-repeat;    
+     
+    background-position: center;
     vertical-align: middle;
-    margin-left: 150px;
-    
+    margin-left: 150px;   
     
 }
 header input[type=text] {
@@ -47,10 +63,11 @@ main>div{
     height: 724px;
     border: 2px solid purple;
     display: flex;
-    margin:0 auto;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 90px;
+    margin-top: 50px;
+    margin-bottom: 90px;
 }
 main>div>div{
     width: 33%;
@@ -73,24 +90,67 @@ main>div>div:nth-child(4),main>div>div:nth-child(5),main>div>div:nth-child(6){
 }
 div>p{
     padding-right: 20px;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: bold;
 }
 hr
 {
     width:90%;
     margin: 0 auto;
+    margin-bottom:10px;
+    
 }
-main ul {
-float:right;
+.ads>p{
+    padding: 0px;
+    margin: 5;
+    /* font-size: 14px; */
+}
+
+.ads>ul {
+    
 list-style-image: url('images/read_more_yellow.png');
 padding-right: 20px;
+}
+.stations{
+    float:right;
+    
+}
+.pratim_nosafim{
+    float:left;
+}
+.ads,.ads>ul>li>a{
+    color: #575757;
+    padding: 10px;
+}
+.ads>ul:hover {
+     
+    list-style-image: url('images/blue_dots.png');
+     color:rgb(40, 83, 163);
+    }
+.ads>ul>li>a:hover{
+    color: rgb(40, 83, 163);
 }
 img[src*="3058756287"]{
     float: left;
     padding-left: 20px;
 }
 
+ img[src*="read_more_white"]:hover,.extra-info a:hover
+{
+    
+    color: rgb(40, 83, 163);
+    background-image: url('images/blue_dots.png');
+    background-repeat: no-repeat;
+    background-position: inherit;    
+    
+    width: [IMAGE_WIDTH_IN_PIXELS]px;
+    height: [IMAGE_HEIGHT_IN_PIXELS]px;  
+}
+ 
+
+.extra-info a{
+    color: white;
+}
 footer{
     position: fixed;
     bottom: 0;
@@ -126,6 +186,7 @@ footer{
     .dropdown>a,footer a{
         border-left: 1px solid;
         padding-right: 5px;
+        
     }
     nav>ul>li{
         display: inline;
@@ -141,14 +202,16 @@ footer{
         display: inline-block;
         
         color:white;
-        font-size: 18px;
+        /* font-size: 14px; */
+        font-family: 'Arial (Hebrew)', Arial;
+        line-height:1;
         text-decoration: none;
-        padding-left: 20px;
+        padding-left: 10px;
     }
     .dd_content>a{
         display: block;
         color:white;
-        font-size: 20px;
+        
         text-decoration: none;
         padding-left: 100px;
         
@@ -166,7 +229,7 @@ footer{
         background-color: lightslategrey;
         border-bottom-right-radius:20px;
         color:white;
-        font-size: 16px;
+        /* font-size: 13px; */
         text-align: right;
         padding: 10px;
         opacity: 0.9;
@@ -184,6 +247,10 @@ footer{
     }
     footer>nav>ul>li:last-child>a{
         color: red;
+    }
+    .logo{
+        float: right;
+        margin-right: 50px;
     }
         /*contact*/
     .contact{
@@ -215,7 +282,7 @@ footer{
         background-repeat: no-repeat;
         direction: rtl;
         text-align: right;
-        font-size: 14px;
+        /* font-size: 13px; */
         font-weight: none;
         margin-top: 10px;
         border-top-right-radius: 10%;
@@ -235,6 +302,10 @@ footer{
         
         
     }
+    form>p,form>h2{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
     .input>div{
         width:75%;
         margin: auto;
@@ -251,6 +322,33 @@ footer{
     }
     textarea{
         
-        height: 108px;
+        height: 100px;
         width:100%;
     }
+aside{
+    
+    direction:rtl;
+    margin : 100px;
+    
+    /* border: 1px solid; */
+    height: 50px;
+}
+aside>a:first-child{
+    padding-left: 0px;
+    float: right;
+    /* border: 1px solid lightslategray; */
+    text-align: right;
+    /* background-image:linear-gradient(rgb(150, 150, 150)  ,rgb(164, 164, 164)  ); */
+    width:100px;
+}
+aside>a:nth-child(2){
+    padding-bottom: 80px;
+    float: right;
+    width:70px;
+     
+}
+aside>h4,aside>hr{
+    margin:20px;
+    padding: 0px;
+    width:50%;
+}
