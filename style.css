@@ -23,6 +23,11 @@ body{
     font-size: 13px;
 
 }
+
+.dd_content>a,.dropdown>a{
+    font-size: 15px;
+    font-weight: bold;
+}
 main>div ,main> .contact{
     margin-top: 50px;
     margin-bottom: 90px;
@@ -143,10 +148,8 @@ img[src*="3058756287"]{
     color: rgb(40, 83, 163);
     background-image: url('images/blue_dots.png');
     background-repeat: no-repeat;
-    background-position: inherit;    
-    /* display: none; */
-    width: [IMAGE_WIDTH_IN_PIXELS]px;
-    height: [IMAGE_HEIGHT_IN_PIXELS]px;  
+    
+    
 }
  
 
@@ -176,7 +179,7 @@ footer{
         position:absolute;
         top: 37px;
         right:0;
-        width: 300px;
+        width: 120px;
         background-image: linear-gradient(rgb(164, 164, 164) 20%,rgb(150, 150, 150) 80%);
         
 
@@ -213,10 +216,12 @@ footer{
     .dd_content>a{
         display: block;
         color:white;
-        
+        border-bottom: 1px solid white;
         text-decoration: none;
-        padding-left: 100px;
+        /* padding-left: 100px; */
         
+        padding-top: 5px ;
+        padding-bottom: 5px ;
         
     }
     .extra-info a{
@@ -257,19 +262,21 @@ footer{
         /*contact*/
     .contact{
         display: flex;
-        width:50%;
+        width:55%;
         margin: 0 auto;
         justify-content: space-between;
 
     }
     .contact>article{
-        width:45%;
+        width:70%;
 
     }
     .contact>article:nth-child(2){
         
         background-image: url('images/contact_form_bg.png');
         background-repeat: no-repeat;
+        border-top-right-radius: 10%;
+        border-right: 0.5px solid lightgray;
     }
 
     .contact_column{
@@ -313,6 +320,7 @@ footer{
         margin: auto;
         margin-top: 10px;
         display: flex;
+        
     }
     .input label,.input input[type=text]{
         width:50%;
@@ -321,6 +329,13 @@ footer{
     }
     .input input[type=submit]{
         float: left;
+        background-color:dodgerblue;
+        color: aliceblue;
+    }
+    .input input[type=submit]:hover{
+        
+        background-color:rgb(255, 251, 30);
+        color: black;
     }
     textarea{
         
@@ -330,24 +345,31 @@ footer{
 aside{
     
     direction:rtl;
-    margin : 100px;
+    margin : 50px;
     
     /* border: 1px solid; */
-    height: 50px;
+    height: 40px;
 }
 aside>a:first-child{
-    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     float: right;
-    /* border: 1px solid lightslategray; */
+    background-color: rgb(230, 230, 230);
     text-align: right;
-    /* background-image:linear-gradient(rgb(150, 150, 150)  ,rgb(164, 164, 164)  ); */
-    width:100px;
+color:black;
+    width:90px;
+    font-size: 13px;
+    margin-left : 30px;
 }
 aside>a:nth-child(2){
-    padding-bottom: 80px;
+    
     float: right;
-    width:70px;
-     
+    width:60px;
+    font-size: 13px;
+}
+aside>span{
+    font-size: 13px;
+    
 }
 aside>h4,aside>hr{
     margin:20px;
